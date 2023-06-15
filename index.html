@@ -1,0 +1,263 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da" xmlns="http://www.w3.org/1999/html">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>VeteranHaven</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar p-3 navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a href="#">
+        <picture>
+            <source class="logo"
+            srcset="images/veteranhaven_logo_farver-01.png"
+            media="(min-width: 992px)">
+        <img src="images/veteranhaven_logo-01.png" class="logo-picture" alt="">
+        </picture>
+        </a>
+     <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+         <span class="toggler-icon middle-bar"></span>
+         <span class="toggler-icon bottom-bar"></span>
+     </button>
+
+     <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-auto">
+                <a class="nav-link" href="#besøg">BESØG</a>
+            </li>
+            <li class="nav-item ms-auto">
+                <a class="nav-link" href="#om">OM</a>
+            </li>
+            <li class="nav-item ms-auto">
+                <a class="nav-link" href="#forløb">FORLØB</a>
+            </li>
+            <li class="nav-item ms-auto">
+                <a class="nav-link" href="#udvikling">UDVIKLING</a>
+            </li>
+            <li class="nav-item ms-auto">
+                <a class="nav-link" href="#virksomhed">VIRKSOMHED</a>
+            </li>
+            <li class="nav-item ms-auto">
+                <a class="nav-link" href="#kontakt">KONTAKT</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<!-- billed-forside med card og info-logo -->
+<div class="video-container align-items-center">
+    <video autoplay loop muted playsinline class="videobg">
+        <source src="images/broll_ting.mp4" type="video/mp4">
+    </video>
+    <a href="https://www.youtube.com/watch?v=r0UKhuUNz8U&ab_channel=Mememan">
+    <div data-aos="zoom-out-up"
+         data-aos-easing="linear"
+         data-aos-duration="1500">
+        <div class="card p-4">
+            <div class="card-body">
+                <h1 class="card-title"><strong>SE DEN FULDE VIDEO HER</strong></h1>
+            </div>
+        </div>
+    </div>
+    </a>
+    <!-- Info-knap -->
+    <div class="info-logo">
+        <a href="#besøg">
+        <img src="images/MERE_INFO-01.png" alt="">
+        </a>
+    </div>
+</div>
+
+
+<!-- -->
+<section id="besøg" >
+</section>
+
+<div class="container">
+
+    <!-- -->
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 pb-lg-5 pb-md-5 pb-sm-0 p-5 align-items-center align-self-center">
+            <h1>BESØG HAVEN</h1>
+            <p>Velkommen til Haven for veteraner og pårørende! Vi tilbyder haveterapi, naturoplevelser, arbejdsprojekter og et fællesskab. Du behøver ikke have PTSD eller andre skader for at være med. Vi er åbne for alle, uanset om deres baggrund er som veteraner eller andre former for helbredsmæssige udfordringer.</p>
+            <p class="mt-3">Kom og vær med til at få oplevelser, aktiviteter og samvær i haven. Vi tilbyder alt fra fritgående dyr, til masser af planter og spændende projekter. Projekter kan indeholde alt fra restaurering af en gammel ladvogn til at bygge havens bygninger. Vi har større projekter i gang, som vi søger midler til at fuldføre!</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 pb-lg-0 pb-md-0 pb-sm-5 p-0 align-items-center align-self-center text-center"
+             data-aos="fade-left"
+             data-aos-easing="ease-in-sine"
+             data-aos-duration="500">
+            <img class="billeder" src="images/besøg_billede.png" alt="">
+        </div>
+    </div>
+
+    <!-- -->
+    <section id="om" >
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 align-items-center align-self-center text-center p-0"
+             data-aos="fade-right"
+             data-aos-easing="ease-in-sine"
+             data-aos-duration="500">
+            <img class="billeder" src="images/om_billede.png" alt="">
+        </div>
+        <div class="ol-lg-6 col-md-6 col-sm-12 pt-lg-5 pt-md-5 pt-sm-2 p-5 align-items-center align-self-center">
+            <h1>OM VETERANHAVEN</h1>
+            <p>René, en krigsveteran og tidligere officer i hæren, som lider af PTSD, har det overordnede ansvar for VeteranHavens daglige drift. Foreningen blev grundlagt i 2013 af frivillige veteraner fra Forsvaret, Politiet, Beredskabsstyrelsen og pårørende. Udover foreningen driver vi også den socialøkonomiske virksomhed VeteranHaven.</p>
+            <p class="mt-3">VeteranHaven er et frivilligt, gratis og permanent indholdstilbud, der bygger på fællesskab og relationer. naturen, arbejdsprojekter og fleksible arbejdsrammer bruges til at genopbygge mennesker. Deltagerne inkluderer veteraner fra Forsvaret, Politiet, Beredskabet og andre, der har tjent Danmark, samt alle, der finder værdi i at være en del af vores fællesskab - herunder pårørende. Formålet med VeteranHaven er at genopbygge mennesker – haven og naturen er blot midlet!</p>
+        </div>
+    </div>
+</section>
+
+    <!-- -->
+    <section id="forløb" >
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 pb-lg-5 pb-md-5 pb-sm-0 p-5 align-items-center align-self-center">
+                <h1>FORLØB I HAVEN</h1>
+            <p>I VeteranHaven får du tillid og støtte i et fællesskab med skræddersyede vilkår. Da vi forstår de udfordringer, der følger med PTSD, psykiske lidelser, sygelig stress, og fysiske handicap, gør vi alt for at skaber trygge skræddersyede rammer for dig.</p>
+            <p class="mt-3">Arbejdsopgaverne i haven er ofte fysiske, såsom dyrepleje, malerarbejde og byggeri. En typisk arbejdsdag begynder kl. 9 med en fællesopstart, hvor vi hilser godmorgen og diskuterer dagens opgaver. Vi tager individuelle pauser efter behov, og arbejdsdagens længde varierer fra person til person. For ansatte og dem i praktik- eller jobafklaringsforløb er det energiniveauet, der bestemmer, mens det for frivillige deltagere handler om tid og lyst.</p>
+            <p class="mt-3">Det anbefales at bære praktisk tøj i haven, der kan tåle snavs. Hvis det ikke er sommer, anbefales det at have varmt og vindtæt tøj på, såsom vandtæt termotøj!</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 pb-lg-0 pb-md-0 pb-sm-5 p-0 align-items-center align-self-center text-center"
+             data-aos="fade-left"
+             data-aos-easing="ease-in-sine"
+             data-aos-duration="500">
+            <img class="billeder" src="images/forløb_billede.png" alt="">
+        </div>
+    </div>
+    </section>
+    <!-- -->
+    <section id="udvikling" >
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-items-center align-self-center text-center p-0"
+                 data-aos="fade-right"
+                 data-aos-easing="ease-in-sine"
+                 data-aos-duration="500">
+                <img class="billeder" src="images/udvikling_billede.png" alt="">
+            </div>
+            <div class="ol-lg-6 col-md-6 col-sm-12 pt-lg-5 pt-md-5 pt-sm-2 p-5 align-items-center align-self-center">
+                <h1>UDVIKLING I HAVEN</h1>
+                <p>Vi stræber efter at give vores deltagere en følelse af værdi og evnen til at bidrage, ligesom enhver anden borger. Dette opnås gennem praktiske og faglige aktiviteter, der udvikler hver deltagers evner. Målet er at tilbyde skræddersyet faglig træning indenfor fx haveanlæg, lettere byggeri og renovering, naturpleje og vedligeholdelse af anlæg, park- og naturområder.</p>
+                <p class="mt-3">Med et samarbejde med Jernberggård Zealand Business Colleges Slagelseafdeling, kan der endda tilbydes en række håndværkskurser. I fleksible forløb får deltageren mulighed for at udvikle sine praktiske og håndværksmæssige færdigheder. Deltageren lærer desuden sikker håndtering af maskiner og udstyr. Målet er, at deltageren bagefter kan at påtage sig arbejdsopgaver hos en arbejdsgiver, for eksempel i fleksjob eller deltidsjob.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <section id="virksomhed" >
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 pb-lg-5 pb-md-5 pb-sm-0 p-5 align-items-center align-self-center">
+            <h1>VIRKSOMHED</h1>
+            <p>Vores socialøkonomiske virksomhed har til formål at skabe hensyntagende arbejdspladser og fortsat kunne drive haven, som et fristed for dem, der har brug for den. Vi har ansatte, der udfører praktisk arbejde, herunder havearbejde, for andre virksomheder. Vores medarbejdere arbejder under hensyntagen til deres individuelle behov og begrænsninger. Derudover tilbyder VeteranHaven deltids- og fleksjobmuligheder, både her i haven og inden for haveservice på eksterne arbejdssteder.</p>
+            <h5 class="mt-3">Tænker på at ansætte os?</h5>
+            <p>Ved ansættelse af os, får du både en social profil, kvalitetsarbejde og særdeles motiveret medarbejdere. Vi udfører arbejde for private, organisationer og virksomheder, som kan f.eks. inkludere græsslåning og hækklipning, fældning af træer, og Forårsklargøring af haven.</p>
+            <h5 class="mt-3">Hvem sender vi ud?</h5>
+            <p>De ansætter vi sender ud, er kvalificerede medarbejdere som kan udføre aftalte arbejde. VeteranHaven tilbyder deltidsansættelse og fleksible jobmuligheder, der tager hensyn til medarbejdernes behov. Vores team består af erfarne fagfolk som gartnere, landmænd, og skovhuggere.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 pb-lg-0 pb-md-0 pb-sm-5 p-0 align-items-center align-self-center text-center"
+             data-aos="fade-left"
+             data-aos-easing="ease-in-sine"
+             data-aos-duration="500">
+            <img class="billeder" src="images/virksomhed_billede.png" alt="">
+        </div>
+    </div>
+    </section>
+
+    <section id="kontakt" >
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-items-center align-self-center text-center p-0"
+                 data-aos="fade-right"
+                 data-aos-easing="ease-in-sine"
+                 data-aos-duration="500">
+                <img class="billeder" src="images/kontakt_billede.png" alt="">
+            </div>
+            <div class="ol-lg-6 col-md-6 col-sm-12 pt-lg-5 pt-md-5 pt-sm-2 p-5 align-items-center align-self-center">
+                <h1>KONTAKT</h1>
+                <h5>Åbningstider:</h5>
+                <p>Hverdage mellem kl. 9 og 14</p>
+                <h5>Adresse:</h5>
+                <p>Brovej 13b, Slots Bjergby</p>
+                <p>4200 Slagelse</p>
+                <h5>Tlf. nr.:</h5>
+                <p>52 40 04 55</p>
+                <h5>Email:</h5>
+                <p>administration@veteranhaven.dk</p>
+                <h5>CVR-nr.:</h5>
+                <p>34746567</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- footer med FontAwesome ikoner -->
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+<footer class="bg-white py-3 mt-4">
+    <div class="container text-dark text-center">
+        <p class="display-5 mb-1">VeteranHaven</p>
+        <a class="btn btn-outline-dark btn-floating mb-2" href="https://www.facebook.com/VeteranHaven/" role="button">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn btn-outline-dark btn-floating mb-2" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+        ></a>
+        <a class="btn btn-outline-dark btn-floating mb-2" href="https://dk.linkedin.com/in/ren%C3%A9-pamperin-3973ab7b" role="button"
+        ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <br>
+        <small class="text-dark-50">&copy; Copyright</small>
+    </div>
+</footer>
+
+
+<!-- up-knappen som bliver synlig når man når "large" breakpoint -->
+<div class="upbtn">
+    <a href="#">
+        <picture>
+        <source srcset="images/UpBtn.png"
+                media="(max-width: 992px)"
+        >
+        <img src="images/pixelbg.png" alt="">
+        </picture>
+    </a>
+</div>
+
+<!-- script til animationerne -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>

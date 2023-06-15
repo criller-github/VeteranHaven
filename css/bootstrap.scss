@@ -1,0 +1,196 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+$custom-colors: (
+        "primary": #f0f,
+        "borderColor": #F6F5F4
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$tablet: "screen and (min width: 768px)";
+$computer: "screen and (min width: 768px)";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html{
+  scroll-behavior: smooth;
+}
+
+* { /* Gælder alt på hele siden */
+  box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+  font-family: "Louis George Cafe", sans-serif;
+}
+
+body{
+  background-color: #f1f3f4;
+  padding-top: 85px;
+}
+
+a{ text-decoration: none; color:#3a3a3c; }
+a:visited { text-decoration: none; color:#3a3a3c; }
+a:hover { text-decoration: none; color: #8b8b8d; }
+a:hover, a:active { text-decoration: none; color: #aeaeb1 }
+
+
+
+/* Navbar */
+.nav-link{
+color: #313338 !important;
+}
+
+.nav-link:hover{
+  color: #7c818d !important;
+}
+
+.logo-picture{
+  width: 30%;
+}
+
+.navbar{
+  background-color: #ffffff;
+}
+
+.navbar-toggler{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  transition: .5s ease-in-out;
+  padding: 20px;
+  right: 20px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+  outline:none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span{
+  margin:0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #0f5132;
+  border-radius: 1px;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar{
+  margin-top: 0;
+
+}
+
+/* når trykket */
+
+.navbar-toggler .top-bar {
+  margin-top: 0;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+  margin-top: 0;
+  transform: rotate(-135deg);
+}
+
+/* når den er collapsed */
+
+.navbar-toggler.collapsed .top-bar{
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+
+
+
+/* video forside */
+.video-container{
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.videobg {
+  z-index: -1;
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* card for forsiden */
+.card {
+  background-color: rgba(245, 245, 245, 0.9);
+  box-shadow: none;
+  outline: none;
+  border: none;
+  top: -20vh;
+}
+.card-title {
+  opacity: 1;
+  color: #7caa76;
+}
+
+/* info-logo */
+.info-logo{
+  position: absolute;
+  top: 70vh;
+}
+
+
+
+/*billederne på siden*/
+.billeder{
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+
+/* up button */
+.upbtn {
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+}
